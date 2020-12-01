@@ -102,11 +102,11 @@ namespace AddressBook
                 panelDrawer.Width = panelDrawer.Width + 15;
                 if(panelDrawer.Width >= panelWidth)
                 {
-                    panelDrawer.AutoScroll = true;
                     timer1.Stop();
                     hide = false;
-                    panelDrawer.Dock = DockStyle.Fill;
                     panelMain.Dock = DockStyle.Right;
+                    panelDrawer.Dock = DockStyle.Fill;
+                    panelDrawer.AutoScroll = true;
                     this.Refresh();
                 }
             }
