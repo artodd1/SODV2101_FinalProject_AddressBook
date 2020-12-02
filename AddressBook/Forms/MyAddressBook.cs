@@ -153,7 +153,7 @@ namespace AddressBook
         private void ChangeColorOnMouseEnterRed(object sender, EventArgs e)
         {
             var currentBtn = (IconButton)sender;
-            currentBtn.IconColor = Color.DarkRed;
+            currentBtn.IconColor = Color.Red;
         }
     }
 }
