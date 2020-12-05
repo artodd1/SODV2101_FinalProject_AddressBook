@@ -55,6 +55,7 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.pictureBoxMainIcon = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolTipMainIcon = new System.Windows.Forms.ToolTip(this.components);
             this.panelTop.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelDrawer.SuspendLayout();
@@ -416,11 +417,17 @@
             this.pictureBoxMainIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMainIcon.TabIndex = 0;
             this.pictureBoxMainIcon.TabStop = false;
+            this.toolTipMainIcon.SetToolTip(this.pictureBoxMainIcon, "MouseHover");
+            this.pictureBoxMainIcon.Click += new System.EventHandler(this.iconButtonContacts_Click);
             // 
             // timer1
             // 
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // toolTipMainIcon
+            // 
+            this.toolTipMainIcon.ToolTipTitle = "Click to display your contacts!";
             // 
             // MyAddressBook
             // 
@@ -480,5 +487,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBoxMainIcon;
+        private System.Windows.Forms.ToolTip toolTipMainIcon;
     }
 }
