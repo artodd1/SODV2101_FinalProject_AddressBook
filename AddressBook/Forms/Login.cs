@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AddressBook.Forms;
 
 namespace AddressBook
 {
@@ -33,6 +34,24 @@ namespace AddressBook
         private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            var currentBtn = (Button)sender;
+            currentBtn.ForeColor = Color.Red;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            var currentBtn = (Button)sender;
+            currentBtn.ForeColor = Color.WhiteSmoke;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Registration resgistration = new Registration();
+            resgistration.Show();
         }
     }
 }

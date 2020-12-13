@@ -28,5 +28,10 @@ namespace AddressBook
             UserInfoDisplay user = new UserInfoDisplay();
             MyAddressBook.Self.OpenChildForm(user);
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

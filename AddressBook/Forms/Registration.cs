@@ -18,14 +18,14 @@ namespace AddressBook.Forms
             InitializeComponent();
         }
 
-        private void Registration_MouseEnter(object sender, EventArgs e)
+        private void iconButtonCreateUser_MouseEnter(object sender, EventArgs e)
         {
             var currentBtn = (IconButton)sender;
             currentBtn.IconColor = Color.LimeGreen;
             currentBtn.ForeColor = Color.LimeGreen;
         }
 
-        private void Registration_MouseLeave(object sender, EventArgs e)
+        private void iconButtonCreateUser_MouseLeave(object sender, EventArgs e)
         {
             var currentBtn = (IconButton)sender;
             currentBtn.IconColor = Color.WhiteSmoke;
